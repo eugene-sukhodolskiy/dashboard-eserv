@@ -1,0 +1,25 @@
+{
+	"name": "Dashboard",
+	"ver": "1.1",
+	"authors": [
+		{
+			"name": "Eugene Sukhodolskiy",
+			"url": "https://github.com/eugene-sukodolskiy",
+			"email": "eugene.sukhodolskiy@gmail.com"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/eugene-sukhodolskiy/dashboard"
+	},
+	"tags": ["open source", "fury"],
+	"links": {
+		"release_url": "http://192.168.1.100/dashboard",
+		"how_to_use": "https://github.com/eugene-sukhodolskiy/dashboard/blob/master/README.md"
+	},
+	"status": "open",
+	"type": "web",
+	"main_lang": "php",
+	"project_color": "#05f",
+	"description": "It is simple info panel for display base info about your projects on your pc. <a href=\"https://github.com/eugene-sukhodolskiy/dashboard/blob/master/README.md\" target=\"_blank\">How to use</a>"
+}

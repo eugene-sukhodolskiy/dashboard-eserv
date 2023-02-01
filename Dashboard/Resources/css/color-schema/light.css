@@ -1,0 +1,58 @@
+:root{
+	--bg-color: #D9D9D9;
+	--main-color: #fff;
+	--text-color: #404040;
+	--main-hover: #F2F2F2;
+	--project-description-bg-color: #F2F2F2;
+	--project-description-color: #404040;
+	--popup-bg-background-color: #0D0D0Df8;
+}
+
+body{
+	color: var(--text-color);
+}
+
+.project{
+	border-bottom-width: 3px;
+}
+
+.project:hover,
+.project.selected{
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.project .description a{
+	color: #4681A6;
+}
+
+.project .description .tag{
+	color: #4681A6;
+}
+
+.project .button,
+.make-project-visible,
+body .button{
+	background-color: #ABC8E2;
+	color: #404040;
+	transition-property: background-color, color;
+}
+
+.project .button:hover,
+.make-project-visible:hover,
+body .button:hover,
+.project .description .project-control .button:hover{
+	background-color: #375D81;
+	color: #fff;
+}
+
+.logo{
+	filter: brightness(.1);
+}
+
+.inp:focus{
+	box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.project .status{
+	background: #222;
+}

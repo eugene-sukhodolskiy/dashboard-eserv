@@ -1,0 +1,31 @@
+{
+	"name": "Project name",
+	"ver": "1.0",
+	"authors": [
+		{
+			"name": "John Doe",
+			"url": "https://john.doe.com",
+			"email": "john.doe@mail.com"
+		},
+		{
+			"name": "Mr. Anderson",
+			"url": "https://mr.anderson.com",
+			"email": "mr.anderson@mail.com"
+		}
+	],
+	"links": {
+		"release_url": "https://myproject.com",
+		"docs": "https://github.com/john-doe/project/blob/master/README.md"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/john-doe/project"
+	},
+	"tags": ["tag1", "tag2", "tag3"],
+	"status": "open",
+	"type": "web||console||app||docs||other",
+	"project_color": "#f60",
+	"favicon": null,
+	"main_lang": "php",
+	"description": "This is description of project"
+}
