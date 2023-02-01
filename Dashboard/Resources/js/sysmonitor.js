@@ -3,6 +3,13 @@ const sysMonConf = {
 };
 
 const refreshMonitorData = (container, interval, failCallback) => {
+	if(document.hidden) {
+		setTimeout(() => {
+			refreshMonitorData(container, interval, failCallback);
+		}, interval);
+		return false;
+	}
+
 	const cpuVal = container.find(".cpu .val");
 	const ramVal = container.find(".ram .val");
 	const diskVal = container.find(".disk .val");
@@ -36,7 +43,7 @@ const refreshMonitorData = (container, interval, failCallback) => {
 	}).done(() => {
 		setTimeout(() => {
 			refreshMonitorData(container, interval, failCallback);
-		}, interval)
+		}, interval);
 	}).fail(() => {
 		failCallback();
 	});
