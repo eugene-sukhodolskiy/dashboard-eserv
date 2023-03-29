@@ -25,4 +25,6 @@ return [
 		"/var/www/html",
 		"/usr/share/transmission"
 	],
+	"cache_folder_path" => "cache",
+	"cache_lifetime" => 60 * 60 * 24 * 7, // 7 days
 ]; 

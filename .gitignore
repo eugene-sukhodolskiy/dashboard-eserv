@@ -2,3 +2,4 @@
 .phpintel/
 Dashboard/hidden-list.json
 Dashboard/Logs/
+cache/

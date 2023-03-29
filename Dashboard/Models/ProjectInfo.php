@@ -188,7 +188,14 @@ class ProjectInfo extends \Dashboard\Middleware\Model{
 
 	public function about_project_files_struct($data){
 		$data['project']['scan'] = [
-			'list' => ['all' => $this -> utils -> scandirs($data['path'])],
+			'list' => [
+				'all' => $this -> utils -> cache_code_results( 
+					$data['project']['name'], 
+					function() use($data) {
+						return $this -> utils -> scandirs($data['path']);
+					} 
+				)
+			],
 			'fsize' => 0
 		];
 
